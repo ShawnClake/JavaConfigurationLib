@@ -11,7 +11,7 @@ private static HashMap<String, String> configs = new HashMap<>();
 
 public static void main (String[] args)
 {
-configs.put("one", "BOB");
+configs.put("one", "true");
 configs.put("two", "this is a string");
 configs.put("three", "109");
 configs.put("four", "200.789");
@@ -40,6 +40,9 @@ if(config.get(Prop1.class).getBoolean())
 {
 System.out.println("success");
 }
+
+System.out.println("boolean as int:"+config.get(Prop1.class).getInt());
+System.out.println("boolean as char:"+config.get(Prop1.class).getChar());
 
 if(config.get(Prop3.class).getInt() >= 100)
 {

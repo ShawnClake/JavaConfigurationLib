@@ -20,24 +20,8 @@ public class Config
         {
             String data = this.config.get(property.getKey());
 
-	    if(property.getDefaultValue() instanceof Boolean)
-		property.setProperty(Boolean.valueOf(data));
-            else if(property.getDefaultValue() instanceof Integer)
-                property.setProperty(Integer.valueOf(data));
-            else if(property.getDefaultValue() instanceof Short)
-                property.setProperty(Short.valueOf(data));
-            else if(property.getDefaultValue() instanceof Byte)
-                property.setProperty(Byte.valueOf(data));
-            else if(property.getDefaultValue() instanceof Long)
-                property.setProperty(Long.valueOf(data));
-            else if(property.getDefaultValue() instanceof Character)
-                property.setProperty(Character.valueOf(data.charAt(0)));
-            else if(property.getDefaultValue() instanceof Float)
-                property.setProperty(Float.valueOf(data));
-            else if(property.getDefaultValue() instanceof Double)
-                property.setProperty(Double.valueOf(data));
-	    else
-                property.setProperty(data);
+
+            property.setProperty(data);
         }
 
         return true;
