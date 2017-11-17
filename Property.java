@@ -130,7 +130,7 @@ public class Property<T>
 	    rchar = (char)rint;
 	}
 
-	if(rint == 0)
+	if(rint == 0 || this.property == null)
 	    rboolean = false;
 	else
 	    rboolean = true;
