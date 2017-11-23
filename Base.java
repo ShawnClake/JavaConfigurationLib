@@ -13,7 +13,7 @@ public static void main (String[] args)
 {
 configs.put("one", "true");
 configs.put("two", "this is a string");
-configs.put("three", "109");
+configs.put("three", "110");
 configs.put("four", "200.789");
 configs.put("five", "false");
 configs.put("six", "-1");
